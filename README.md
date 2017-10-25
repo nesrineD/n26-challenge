@@ -21,7 +21,8 @@ Content-Type: application/json
 ```
 ##### Response 
 
-``` 201 
+``` 
+201 
 Content-Length:  0
 Date:  Wed, 25 Oct 2017 10:37:42 GMT
 ```
@@ -40,7 +41,8 @@ Content-Type: application/json
 
 ##### Response 
 
-``` 204 
+``` 
+204 
 Date:  Wed, 25 Oct 2017 10:39:59 GMT
 ```
 
@@ -53,7 +55,8 @@ GET http://localhost:8080/statistics
 ```
 ##### Response 
 
-``` 200 
+``` 
+200 
 Content-Type:  application/json;charset=UTF-8
 Date:  Wed, 25 Oct 2017 10:42:26 GMT
 Transfer-Encoding:  chunked
