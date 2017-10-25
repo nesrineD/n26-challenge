@@ -17,8 +17,8 @@ Content-Type: application/json
 {
 "amount": 10.0,
 "timestamp" : 1508927852531
-}```
-
+}
+```
 ##### Response 
 
 ``` 201 
