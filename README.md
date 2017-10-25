@@ -6,7 +6,7 @@ mvn clean install
 mvn spring-boot:run
 ### Specs
 The Rest Client "HTTPRequester" was used for running the HTTP Requests
-** Transactions:
+* Transactions:
 Add a transaction ( with timestamp in the last minute): 
 #### Request 
 ```
@@ -33,13 +33,15 @@ Content-Type: application/json
 ``` 204 
 Date:  Wed, 25 Oct 2017 10:39:59 GMT
 ```
--  Statistics:
+* Statistics:
 It returns the statistic based on the transactions which happened in the last 60 seconds:
+
 #### Request 
 ``` 
 GET http://localhost:8080/statistics
 ```
- #### Response 
+#### Response 
+
 ``` 200 
 Content-Type:  application/json;charset=UTF-8
 Date:  Wed, 25 Oct 2017 10:42:26 GMT
