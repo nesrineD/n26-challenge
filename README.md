@@ -11,7 +11,6 @@ The Rest Client HTTPRequester was used for running the HTTP Requests
 * Add a transaction ( with timestamp in the last minute): 
 
 ##### Request 
-
 ```
 POST http://localhost:8080/transactions
 Content-Type: application/json
@@ -30,14 +29,14 @@ Date:  Wed, 25 Oct 2017 10:37:42 GMT
 * Add a transaction ( with an old timestamp ): 
 
 ##### Request 
-
 ``` 
 POST http://localhost:8080/transactions
 Content-Type: application/json
 {
 "amount": 10.0,
 "timestamp" : 1508927852531
-}```
+}
+```
 
 ##### Response 
 
