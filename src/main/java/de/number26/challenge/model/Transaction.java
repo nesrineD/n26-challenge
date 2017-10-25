@@ -3,9 +3,12 @@ package de.number26.challenge.model;
 import java.io.Serializable;
 
 public class Transaction  implements Serializable{
-	public Transaction() {
-		
-	}
+	
+	private static final long serialVersionUID = 1L;
+	private Double amount;
+	private Long timestamp;
+	
+	public Transaction() {}
 
 	public Transaction(Double amount, Long timestamp) {
 		super();
@@ -13,9 +16,6 @@ public class Transaction  implements Serializable{
 		this.timestamp = timestamp;
 	}
 	
-	private static final long serialVersionUID = 1L;
-	private Double amount;
-	private Long timestamp;
 	
 	public Double getAmount() {
 		return amount;

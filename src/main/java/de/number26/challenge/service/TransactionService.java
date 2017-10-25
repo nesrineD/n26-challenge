@@ -16,7 +16,6 @@ public class TransactionService {
     // a threadsafe ArrayList to hold all transactions
 	private List<Transaction> transactions = Collections.synchronizedList(new ArrayList<Transaction>());
 	
-	
 	public synchronized boolean addTransaction(Transaction tr) {
 		long threshold = Instant.now().minusSeconds(60L).toEpochMilli();
 		if (tr.getTimestamp() > threshold) {

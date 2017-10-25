@@ -9,7 +9,6 @@ public class Statistics implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
-
 	private Double sum;
 	private Double avg;
 	private Double max;
