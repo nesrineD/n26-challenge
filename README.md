@@ -4,13 +4,13 @@ The aim of this application is to provide a restful api for n26 statistics.
 mvn clean install
 ### Run the Application
 mvn spring-boot:run
-### Specs
+### Specifications
 The Rest Client HTTPRequester was used for running the HTTP Requests
-#### Transactions:
+#### - Transactions Endpoint:
 
 * Add a transaction ( with timestamp in the last minute): 
 
-##### Request 
+** Request 
 ```
 POST http://localhost:8080/transactions
 Content-Type: application/json
@@ -19,7 +19,7 @@ Content-Type: application/json
 "timestamp" : 1508927852531
 }
 ```
-##### Response 
+** Response 
 
 ``` 201 
 Content-Length:  0
@@ -44,7 +44,7 @@ Content-Type: application/json
 Date:  Wed, 25 Oct 2017 10:39:59 GMT
 ```
 
-#### Statistics:
+#### Statistics Endpoint:
 It returns the statistic based on the transactions which happened in the last 60 seconds:
 
 ##### Request 
