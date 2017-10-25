@@ -21,11 +21,11 @@ public class TransactionController {
 	@Autowired
 	TransactionService transactionsRepository;
 
-	// Get All Transactions
+	/*// Get All Transactions used for testing 
 	@GetMapping("/transactions")
 	public List<Transaction> getAllTransactions() {
 		return transactionsRepository.getTransactions();
-	}
+	}*/
 
 	// Create a new Transaction
 	@PostMapping(path = "/transactions", consumes = "application/json")
