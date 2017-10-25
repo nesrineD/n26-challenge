@@ -22,12 +22,11 @@ Content-Type: application/json
 
 ##### Response 
 
-``` 
-201 
+``` 201 
 Content-Length:  0
 Date:  Wed, 25 Oct 2017 10:37:42 GMT
-
 ```
+
 * Add a transaction ( with an old timestamp ): 
 
 ##### Request 
