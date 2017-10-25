@@ -15,13 +15,13 @@ import de.number26.challenge.model.Transaction;
 @Component
 public class StatisticsService {
 	@Autowired
-	TransactionService trDataStore;
+	TransactionService trService;
 	@Autowired
 	Statistics stats;
 	
 	public synchronized List<Transaction> lastMinuteTransactions(){ 
 		long threshold = Instant.now().minusSeconds(60L).toEpochMilli();
-		List<Transaction>  allTransactions = trDataStore.getTransactions();
+		List<Transaction>  allTransactions = trService.getTransactions();
 		List<Transaction>  subTr= allTransactions.stream().filter(tr ->  tr.getTimestamp()> threshold).collect(Collectors.toList());
 		System.out.println("transactions of the last minute ");
 		subTr.forEach(t-> System.out.println(t));

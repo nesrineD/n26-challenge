@@ -2,6 +2,7 @@ package de.number26.challenge.service;
 
 import java.time.Instant;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import org.springframework.stereotype.Component;
@@ -12,8 +13,8 @@ import de.number26.challenge.model.Transaction;
 public class TransactionService {
 
 	
-
-	private List<Transaction> transactions = new ArrayList<Transaction>();
+    // a threadsafe ArrayList to hold all transactions
+	private List<Transaction> transactions = Collections.synchronizedList(new ArrayList<Transaction>());
 	
 	
 	public synchronized boolean addTransaction(Transaction tr) {
