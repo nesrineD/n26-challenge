@@ -10,7 +10,7 @@ The Rest Client HTTPRequester was used for running the HTTP Requests
 
 * Add a transaction ( with timestamp in the last minute): 
 
-** Request 
+##### Request 
 ```
 POST http://localhost:8080/transactions
 Content-Type: application/json
@@ -19,7 +19,7 @@ Content-Type: application/json
 "timestamp" : 1508927852531
 }
 ```
-** Response 
+##### Response 
 
 ``` 201 
 Content-Length:  0
@@ -44,7 +44,7 @@ Content-Type: application/json
 Date:  Wed, 25 Oct 2017 10:39:59 GMT
 ```
 
-#### Statistics Endpoint:
+#### - Statistics Endpoint:
 It returns the statistic based on the transactions which happened in the last 60 seconds:
 
 ##### Request 
