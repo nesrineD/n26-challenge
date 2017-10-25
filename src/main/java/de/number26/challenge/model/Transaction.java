@@ -13,7 +13,7 @@ public class Transaction  implements Serializable{
 		this.timestamp = timestamp;
 	}
 	
-	private static final long serialVersionUID = 10000000000L;
+	private static final long serialVersionUID = 1L;
 	private Double amount;
 	private Long timestamp;
 	
